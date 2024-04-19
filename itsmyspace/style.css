@@ -1,0 +1,476 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+
+
+
+.bar {
+    background-color:black;
+    padding: 30px 50px;
+    border:5px;
+    
+    
+    
+}
+
+.bar ul {
+    position:absolute;
+    display:flex;
+    
+}
+
+
+.guide {
+    position:absolute;
+    color:darkgoldenrod;
+    top: 50px;
+    right: 50px;
+    align-items:center;
+    justify-content:space-between;
+    display: flex;
+    flex-direction:row;
+    border-radius: 10px;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin:0 10px;
+    
+
+}
+
+.guide p{
+    text-decoration: none;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin:0 10px;
+
+}
+
+
+header{
+    background-color:darkslategrey;
+    padding: 25px 2px;
+    position:fixed;
+    display: flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:flex-start;
+    border-radius: 10px;
+}
+
+header ul{
+    position:fixed;
+}
+
+header h4 {
+    font-size: 14px;
+    color:black
+}
+
+
+
+
+.cover{
+    background-color:white;
+    color:white;
+    height: 68vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: center;
+    align-items:center;
+    justify-content:center;
+    animation: backgroundAnimation 30s infinite;
+    
+}
+
+@keyframes backgroundAnimation {
+    0% {
+      background-image: url('static/IMG_6257.jpg');
+    }
+    25% {
+      background-image: url('static/IMG_6533.jpg');
+    }
+    50% {
+      background-image: url('static/IMG_6550.jpg');
+    }
+    75% {
+      background-image: url('static/IMG_6554.jpg');
+    }
+    100% {
+      background-image: url('static/IMG_6552.jpg'); 
+    }
+  }
+
+
+
+
+
+.cover h1{
+    font-size: 42px;
+    margin-bottom:80px;
+}
+
+
+.latest_released {
+    background:darkslategrey;
+    color:black;
+    height: 200px;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    font-size: 8px;
+
+
+}
+
+
+
+
+
+.gallery {
+    
+    background:#fff;
+    color:#fff;
+    height: 580px;
+    display:flex;
+    /*width:150px;*/
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    padding:50px 90px 40px;
+
+    
+}
+
+.gallery img {
+    display: flex;
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hills {
+    color:#003329;
+    height:700px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#text {
+    position:absolute;
+    font-size:5em;
+    color:#003329;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+
+
+}
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Signika+Negative:300,400&display=swap');
+
+.scroll { 
+    font-family: "Signika Negative", sans-serif; 
+    font-weight: 300;
+    text-align: center;
+    
+    height: 300vh;
+  }
+.scroll h6 {
+    position: relative;
+    top: 20px;
+    left: 600px;
+    transform: translateX(-50%); 
+  }
+
+
+
+
+.Intro{
+    background:#003329;
+    /*position:relative;*/
+    padding:0px;
+    height:250px;
+    color:coral;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    font-size: 15px;
+}
+
+.Intro h1 {
+    color:#fff;
+    margin-bottom: 10px;
+    text-decoration: none; 
+}
+
+.Intro a {
+    color:#fff;
+    margin-bottom: 10px;
+    text-decoration: none; 
+}
+
+.Intro a hover{
+    text-decoration:solid; 
+    color:deeppink;
+}
+
+
+.Intro {
+    background-color:brown;
+    height: 300px;
+    font-size: 15px;
+    align-items:center;
+    justify-content:center;
+    display:flex;
+    flex-direction: column;
+}
+
+.Intro h4 {
+    font-size: 15px;
+    margin: 0 50px 40px;
+}
+
+
+
+
+
+.welcome {
+    background-color:cornflowerblue;
+    height: 300px;
+    font-size: 15px;
+    align-items:center;
+    justify-content:center;
+    display:flex;
+    flex-direction: column;
+}
+
+.welcome a{
+    text-decoration:none;
+    
+}
+
+.films {
+    background-color:goldenrod;
+    height: 300px;
+    font-size: 15px;
+    align-items:center;
+    justify-content:center;
+    display:flex;
+    flex-direction: column;
+
+}
+
+.contact{
+    background:#485652;
+    color:coral;
+    height: 300px;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    font-size: 15px;
+
+}
+
+
+
+
+h1 {
+    color:brown;
+    font-weight: bold; 
+    font-size: 42px; 
+    text-decoration: none; 
+}
+
+.Intro a{
+    text-decoration: none; 
+}
+
+.films a{
+    text-decoration: none; 
+}
+
+.contact a{
+    text-decoration: none; 
+}
+h1 {
+    text-decoration: none; 
+}
+
+h4 {
+    color:goldenrod;
+    font-size: 20px;
+}
+
+h3 {
+    color:black;
+    font-weight: bold; 
+    font-size: 32px; 
+}
+
+
+h1 a {
+    color:black ;
+    text-decoration: none; 
+    font-size: 20px;
+   
+}
+
+
+
+
+h4 a {
+    color:white ;
+    text-decoration: none; 
+}
+
+h4 a:hover{
+    background:hotpink;
+    color:#fff;
+    border-radius: 20px;
+
+}
+
+h1 a:hover{
+    background:hotpink;
+    color:#fff;
+    border-radius: 20px;
+
+}
+
+h2 {
+    color:aliceblue;
+    font-weight: bold;
+    font-size: 36px; 
+}
+
+
+h3 a {
+    color:white ;
+    text-decoration: none; 
+}
+
+
+
+
+
+
+
+.menu {
+    display: none;
+}
+
+
+
+@keyframes slideIn {
+    from {
+      opacity: 0; 
+      transform: translateX(-100%); 
+    }
+    to {
+      opacity: 1; 
+      transform: translateX(0);
+    }
+  }
+  
+  
+.element {
+    animation: slideIn 1s ease-in-out; 
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    header  {
+        display: none;
+    }
+
+
+    
+    .bar h2{
+        font-size: 12px;
+        left:20%;
+        /*transform: translateX(+20%);*/
+
+    }
+    .bar h4{
+        font-size: 12px;
+        left:50%;
+        transform: translateX(+10%);
+        transform: translateY(-10%);
+    }
+    .cover{
+        font-size: 30px;
+    }
+    .cover h1 {
+        font-size:30px;
+        transform: translateX(+5%);
+    }
+
+    .latest_released h3{
+        font-size:20px ;
+        transform: translateX(+5%);
+    }
+    .menu {
+        display: block;
+        background-color: transparent;
+        color:white;
+        font-size:35px;
+        position:absolute;
+        top:15px;
+        left:20px;
+        border:none;
+        cursor: pointer;
+    }
+    .gallery {
+        height: 1800px;
+        flex-direction: column;
+    }
+    .parallax img {
+        display:block;
+        size:20%;
+
+    }
+
+
+    
+}
+
+
+

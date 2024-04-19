@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background:#f2f2f2;
+}
+
+h3{
+    font-size: 40px;
+    text-align: center;
+    color: rgba(255,255,255, .5);
+
+}
+
+h2 {
+    font-size: 18px;
+
+}
+
+.cov1 {
+    background-image: url('static/Dune1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.cov2 {
+    background-image: url('static/Dune3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+.cov3 {
+    background-image: url('static/Dune4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+.cov4 {
+    background-image: url('static/Dune5.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+.cov_inner1{
+    padding:34% 0;
+
+}
+
+.cov_inner2{
+    padding: 14% 0;
+
+}
+
+.cov_inner3{
+    padding:24% 0;
+
+}
+
+.cov_inner4{
+    padding:18% 0;
+
+}
+
+
+p {
+    font-size: 16px;
+    color:#555;
+    text-align: justify;
+    line-height: 30px;
+    margin: 0 50px 40px;
+}
+
+
+h1 a{
+    font-size: 25;
+    color: brown;
+    text-decoration: none; 
+    align-items:center;
+
+}
+
+h1 a:hover{
+    background: #00a3b9;
+    border-radius: 10px;
+}
