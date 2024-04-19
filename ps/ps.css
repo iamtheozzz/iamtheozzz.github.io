@@ -61,10 +61,14 @@ body {
 
 
     .panel-img{
-        width: 230px;
+        width: 260px;
         height:auto;
-        right:50%;
+        right:20%;
         /*transform: translateX(+50%);*/
         margin-right: 20px; /* 图片与文字之间的间距 */
     }
   }
+
+
+
+
