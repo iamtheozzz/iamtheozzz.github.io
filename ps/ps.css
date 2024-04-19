@@ -1,60 +1,70 @@
 @import url('https://codepen.io/GreenSock/pen/7ba936b34824fefdccfe2c6d9f0b740b.css');
 
+
 body {
     overscroll-behavior: none;
-    height: 100vh;
-}
+    height: 100vh;}
   
 .container {
-    color: cadetblue;
+    overscroll-behavior: none;
+    color:cadetblue;
     width: 600%;
     height: 100%;
     display: flex;
     flex-wrap: nowrap;
-}
-
-.panel {
+  }
+  .panel {
     display: flex; /* 使用 Flexbox 布局 */
     align-items: center; /* 垂直居中对齐 */
-    width: 100%; /* 让每个面板占据整个屏幕宽度 */
-    padding: 20px; /* 添加一些内边距，增加面板之间的间隔 */
-    box-sizing: border-box; /* 让内边距和边框计入盒模型的总宽度 */
-}
-
-.panel-img {
-    width: 100%; /* 让图片占据面板的整个宽度 */
+  }
+  .panel {
+    display: flex;
+    align-items: center;
+  }
+  
+  .panel-img {
+    width: 200px; /* 设置图片宽度 */
     height: auto; /* 让高度自适应，保持原始比例 */
-    margin-bottom: 20px; /* 图片与文字之间的间距 */
-}
-
-.panel-text {
-    flex: 1; /* 填充剩余空间，使文字占据右侧 */
+    margin-right: 60px; /* 图片与文字之间的间距 */
+  }
+  
+  .panel-text {
+    flex: 1;
     text-align: center; /* 文字居中对齐 */
-}
+  }
+  
+  
+  .panel-img {
+    margin-right: 60px; /* 图片与文字之间的间距 */
+  }
+  
+  .panel-text {
+    flex: 1; /* 填充剩余空间，使文字占据右侧 */
+  }
+  
+  .panel-img {
+    left:200px;
+    width: 400px; /* 设置图片宽度 */
+    height: auto; /* 让高度自适应，保持原始比例 */
+  }
 
-.panel-text a {
+
+  .panel-text a{
     font-size: 20px;
-    color: white;
+    color:white;
     text-decoration: none; 
-}
+    
+  }
+  
 
-@media screen and (max-width: 768px) {
-    .container {
-        flex-wrap: wrap; /* 当屏幕尺寸小于 768px 时，让容器的子元素换行 */
+  @media screen and (max-width: 768px) {
+
+
+    .panel-img{
+        width: 230px;
+        height:auto;
+        right:20%;
+        /*transform: translateX(+50%);*/
+        margin-right: 20px; /* 图片与文字之间的间距 */
     }
-
-    .panel {
-        width: 100%; /* 让每个面板占据整个屏幕宽度 */
-    }
-
-    .panel-img {
-        width: 100%; /* 让图片占据整个面板的宽度 */
-        margin-bottom: 20px; /* 图片与文字之间的间距 */
-    }
-}
-
-
-
-
-
-
+  }
