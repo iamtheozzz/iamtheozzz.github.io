@@ -9,6 +9,15 @@
 	box-sizing: border-box;
 }
 
+
+@media screen and (max-width: 768px) {
+	
+   .item-2{
+   display:flex;
+	}
+}
+
+
 html {
 	scroll-snap-type: y mandatory;
 }
@@ -311,12 +320,15 @@ h1 a:hover{
 
 
 
+
+
 @supports (animation-timeline: scroll()) {
 	section:nth-of-type(1) article { view-timeline: --article-one; }
 	section:nth-of-type(2) article:nth-of-type(1) { view-timeline: --article-two; }
 	section:nth-of-type(2) article:nth-of-type(2) { view-timeline: --article-three; }
 	section:nth-of-type(2) article:nth-of-type(3) { view-timeline: --article-four; }
 	section:nth-of-type(2) article:nth-of-type(4) { view-timeline: --article-five; }
+	
 
 	.fixed {
 		position: fixed;
@@ -505,4 +517,10 @@ h1 a:hover{
 	.indicator:nth-of-type(5) { animation-timeline: --article-five; }
 	@keyframes activate { to { flex: 3; }}
 	@keyframes deactivate { to { flex: 1; }}
+	
 }
+
+
+
+
+	
