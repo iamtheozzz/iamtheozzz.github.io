@@ -6,8 +6,8 @@
 
 body {
   margin: 0;
-  color:black;
-  background-color:#fff;
+  color:#fff;
+  background-color:black;
   font-weight: 600;
   width: 100%;
   overflow-x: hidden;
@@ -73,15 +73,15 @@ body {
 
 @media screen and (max-height: 1000px) {
   .card {
-    width: 350px;
-    height: 497px;
+    width: 300px;
+    height: 480px;
   }
 }
 
 @media screen and (max-height: 800px) {
   .card {
-    width: 300px;
-    height: 400px;
+    width: 270px;
+    height: 360px;
   }
 }
 
@@ -93,7 +93,7 @@ body {
 }
 
 a {
-  color: black;
+  color: #fff;
   opacity: 80;
   text-decoration: underline;
 }
