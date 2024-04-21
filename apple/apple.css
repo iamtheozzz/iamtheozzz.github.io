@@ -57,4 +57,18 @@ body {
     justify-content: center;
     align-items: center;
   }
+
+  h1 {
+    color:#fff;
+  }
   
+
+
+  @media screen and (max-height: 800px) {
+    .iphone {
+      width: 270px;
+      height: 360px;
+    }
+
+    
+  }
