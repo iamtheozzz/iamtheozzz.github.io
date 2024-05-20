@@ -695,8 +695,8 @@ h2 {
 }
 
 h3 {
-  font-weight: 300;
-  font-size: calc(0.4 * var(--m));
+  font-weight: 260;
+  font-size: calc(0.3 * var(--m));
   margin: 0;
 }
 
