@@ -6,12 +6,13 @@
 }
 body {
   background-color: #000;
-  height: 200vh;
+  height: 400vh;
   font-family: 'Muli', sans-serif;
 }
 .text {
   position: fixed;
-  top: 80%;
+  padding-top: 50px;
+  top: 10%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   list-style: none;
@@ -43,6 +44,8 @@ body {
   opacity: 0;
   max-width: 0;
 }
+
+
 
 
 
