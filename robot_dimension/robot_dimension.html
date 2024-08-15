@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    
+    <body class="bg-gradient-to-t from-black-300 to-black-100 flex flex-col gap-12 items-center justify-center min-h-screen p-4
+    before:[&:has(#radio-1:checked)_#toggle-1]:scale-100
+    before:[&:has(#radio-2:checked)_#toggle-2]:scale-100
+    before:[&:has(#radio-3:checked)_#toggle-3]:scale-100
+    before:[&:has(#radio-4:checked)_#toggle-4]:scale-100
+    before:[&:has(#radio-5:checked)_#toggle-5]:scale-100
+    before:[&:has(#radio-6:checked)_#toggle-6]:scale-100
+    before:[&:has(#radio-7:checked)_#toggle-7]:scale-100
+">
+
+<div class="bg-pink/50 backdrop-blur-md ring ring-pink/5 p-8 w-full max-w-5xl rounded-xl shadow-2xl shadow-black-300 ">
+<nav class="flex flex-wrap gap-0 text-sm
+            *:py-2
+            *:px-4
+            *:relative
+            *:isolate 
+            *:cursor-pointer
+            *:whitespace-nowrap
+            before:*:absolute
+            before:*:w-full
+            before:*:h-1
+            before:*:left-0
+            before:*:bottom-0
+            before:*:bg-pink-400
+            before:*:rounded-full
+            before:*:transition-all
+            before:*:duration-500
+            before:*:ease-[cubic-bezier(.47,1.64,.38,.87)]
+            before:*:scale-0
+            before:*:origin-left 
+            hover:before:*:scale-100
+        ">
+  <label id="toggle-1" for="radio-1">Machine Learning</label>
+  <label id="toggle-2" for="radio-2">Circuit Board</label>
+  <label id="toggle-3" for="radio-3">Code</label>
+  <label id="toggle-4" for="radio-4">Robotics</label>
+  <label id="toggle-5" for="radio-5">AL&Further Math</label>
+  <label id="toggle-6" for="radio-6">CS</label>
+  <label id="toggle-7" for="radio-7">Physics</label>
+</nav>
+
+<section class="grid [grid-template-areas:'stack']  mt-8
+            [&>article]:[grid-area:stack]
+            [&>article]:transition-all
+            [&>article]:duration-500
+            [&>article>div]:scale-0
+            [&>article>div]:origin-top
+            [&>article>div]:transition-all
+            [&>article>div]:duration-500
+            [&>input:checked+article>div]:ease-[cubic-bezier(.47,1.64,.38,.87)]
+            [&>input:checked+article>div]:scale-100
+            [&>input:checked+article>div]:delay-500
+            [&>input:checked+article>div:nth-child(2)]:delay-[800ms]
+            [&>input:checked+article>div:nth-child(3)]:delay-[1100ms]
+            [&>input:checked+article>div:nth-child(4)]:delay-[1400ms]
+            [&>article]:grid
+            [&>article]:grid-cols-1
+            min-[400px]:[&>article]:grid-cols-2
+            sm:[&>article]:grid-cols-4
+            [&>article]:gap-4
+            [&_h3]:font-medium
+            [&_h3]:mb-2
+            [&_h3]:text-sm
+            [&_h3]:px-3
+
+            [&_a]:font-thin
+            [&_a]:text-sm
+            [&_a]:py-1 
+            [&_a]:px-3
+            [&_a]:relative
+            [&_a]:isolate 
+            [&_a]:block 
+
+            before:[&_a]:absolute
+            before:[&_a]:inset-[0_100%_0_0]
+            before:[&_a]:bg-gradient-to-r
+            before:[&_a]:from-pink-300
+            before:[&_a]:to-blue-transparent
+            before:[&_a]:-z-10
+            before:[&_a]:rounded-md
+            before:[&_a]:transition-all
+            before:[&_a]:duration-500
+            before:[&_a]:ease-in-out
+            hover:before:[&_a]:inset-0
+        ">
+  <!-- furniture -->
+  <input type="radio" id="radio-1" name="panel-toggle" class="sr-only">
+  <article id="panel-1">
+    <div>
+      <h3>SVM</h3>
+      <ul>
+        <li><a href="http://itsmyspace.xyz/robot_dimension/svm.html">Learn More</a></li>
+       
+        
+      </ul>
+    </div>
+
+    <div>
+      <h3>CNN</h3>
+      <ul>
+        <li><a href="http://itsmyspace.xyz/robot_dimension/cnn.html">Learn More</a></li>
+       
+        
+      </ul>
+    </div>
+
+    <div>
+      <h3>ReLu</h3>
+      <ul>
+        <li><a href="http://itsmyspace.xyz/robot_dimension/relu.html">Learn More</a></li>
+   
+        
+      </ul>
+    </div>
+
+
+  </article>
+
+  <!-- ligning -->
+  <input type="radio" id="radio-2" name="panel-toggle" class="sr-only">
+  <article id="panel-1">
+    <div>
+      <h3>stm32</h3>
+      <ul>
+        <li><a href="#">Learn More</a></li>
+        
+      </ul>
+    </div>
+
+    <div>
+      <h3>esp32</h3>
+      <ul>
+        <li><a href="#">Learn More</a></li>
+       
+        
+      </ul>
+    </div>
+
+  </article>
+
+  <!-- decor -->
+  <input type="radio" id="radio-3" name="panel-toggle" class="sr-only" checked>
+  <article id="panel-1">
+    <div>
+      <h3>Python</h3>
+      <ul>
+        <li><a href="#">Pytorch</a></li>
+        <li><a href="#">SVM</a></li>
+        <li><a href="#">CNN</a></li>
+        <li><a href="#">YOLO</a></li>
+        <li><a href="#">Markov</a></li>
+        
+      </ul>
+    </div>
+    <div>
+      <h3>C</h3>
+      <ul>
+        <li><a href="#">Controller</a></li>
+        <li><a href="#">Connection</a></li>
+        <li><a href="#">Converter</a></li>
+        
+      </ul>
+    </div>
+    
+    
+  </article>
+
+  <!-- serving -->
+  <input type="radio" id="radio-4" name="panel-toggle" class="sr-only">
+  <article id="panel-1">
+    <div>
+      <h3>Fun Facts</h3>
+      <ul>
+        <li><a href="http://itsmyspace.xyz/robot_dimension/robotics.html">Learn More</a></li>
+       
+        
+      </ul>
+    </div>
+  </article>
+
+  <!-- textiles -->
+  <input type="radio" id="radio-5" name="panel-toggle" class="sr-only">
+  <article id="panel-1">
+    <div>
+      <h3>AL Math</h3>
+      <ul>
+        <li><a href="#">Coming Soon</a></li>
+      
+        
+      </ul>
+    </div>
+
+    <div>
+      <h3>Further Math</h3>
+      <ul>
+        <li><a href="#">Coming Soon</a></li>
+        
+      </ul>
+    </div>
+  </article>
+
+  <input type="radio" id="radio-6" name="panel-toggle" class="sr-only">
+  <article id="panel-1">
+    <div>
+      <h3>AS CS</h3>
+      <ul>
+        <li><a href="#">Coming Soon</a></li>
+        
+      </ul>
+    </div>
+    <div>
+      <h3>AL CS</h3>
+      <ul>
+        <li><a href="#">Coming Soon</a></li>
+        
+      </ul>
+    </div>
+
+  </article>
+
+  <input type="radio" id="radio-7" name="panel-toggle" class="sr-only">
+  <article id="panel-1">
+    <div>
+      <h3>AL physics</h3>
+      <ul>
+        <li><a href="#">Coming Soon</a></li>
+        
+  </article>
+</section>
+
+</div>
+</body>
+</body>
+</html>
