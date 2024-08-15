@@ -1,8 +1,8 @@
 * {
     box-sizing: border-box;
-  }
-  
-  :root {
+}
+
+:root {
     --color: #1e293b;
     --c1: #fbda61;
     --c2: #ff5acd;
@@ -18,12 +18,6 @@
     --scale-start: 0.5;
     --scale-end: 1.001;
     --hover-offset: 5%;
-  
-    /* 
-      linear easing generator
-      https://linear-easing-generator.netlify.app/
-    */
-    /* prettier-ignore */
     --ease-elastic: linear(
       0, 0.186 2.1%, 0.778 7.2%, 1.027 9.7%, 1.133, 1.212, 1.264, 1.292 15.4%,
       1.296, 1.294, 1.285, 1.269 18.9%, 1.219 20.9%, 1.062 25.8%, 0.995 28.3%,
@@ -31,52 +25,53 @@
       1.021 52.4%, 1.02 56.4%, 1 65.5%, 0.994 70.7%, 1.001 88.4%, 1
     );
     --ease-bounce-out: cubic-bezier(0.34, 1.56, 0.64, 1);
-  }
-  
-  @media (prefers-reduced-motion) {
+}
+
+@media (prefers-reduced-motion) {
     :root {
-      --scale-start: var(--scale-end);
-      --ease-elastic: ease-out;
-      --ease-bounce-out: ease-out;
-      --hover-offset: 0;
+        --scale-start: var(--scale-end);
+        --ease-elastic: ease-out;
+        --ease-bounce-out: ease-out;
+        --hover-offset: 0;
     }
-  }
-  
-  body {
+}
+
+body {
     padding-inline: 1rem;
     font-family: system-ui;
     font-weight: 680;
     font-size: calc(1rem + 10vmin);
     text-align: center;
     overflow-x: hidden;
-  }
-  
-  .intro {
+}
+
+.intro {
     display: flex;
     justify-content: center;
     gap: 0.2em;
     font-size: 0.5em;
     margin-block-start: calc(50vh - 1ex);
-  }
-  
-  .intro span {
+}
+
+.intro span {
     display: inline-block;
-  }
-  
-  .intro span:first-child {
+}
+
+.intro span:first-child {
     transform-origin: right bottom;
+    -webkit-transform-origin: right bottom; /* Safari */
     animation: wave 250ms 1s ease 3;
-  }
-  
-  .intro span:last-child {
+}
+
+.intro span:last-child {
     animation: hover 500ms linear infinite;
-  }
-  
-  .box {
+}
+
+.box {
     margin-block: 80vh;
-  }
-  
-  .text {
+}
+
+.text {
     margin-inline: auto;
     padding-block: 0.2em;
     max-inline-size: 15ch;
@@ -86,50 +81,28 @@
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-  }
-  
-  @supports (animation-timeline: view()) {
+}
+
+@supports (animation-timeline: view()) {
     .box {
-      animation: trigger steps(1) both, fade linear both;
-      animation-timeline: view();
-      animation-range: entry 80% contain 40%;
+        animation: trigger steps(1) both, fade linear both;
+        animation-timeline: view();
+        animation-range: entry 80% contain 40%;
     }
-  
+
     .text {
-      animation: pop-back 300ms var(--ease-bounce-out) forwards;
+        animation: pop-back 300ms var(--ease-bounce-out) forwards;
     }
-  
+
     @container style(--animate: true) {
-      .text {
-        animation: pop 600ms var(--ease-elastic) forwards,
-          text-gradient 1s cubic-bezier(0, 0.55, 0.45, 1) forwards;
-      }
+        .text {
+            animation: pop 600ms var(--ease-elastic) forwards,
+                text-gradient 1s cubic-bezier(0, 0.55, 0.45, 1) forwards;
+        }
     }
-  }
-  
-  /*.smile {
-    width: 1em;
-    margin-inline: auto;
-    overflow: hidden;
-    white-space: nowrap;
-    margin-block-end: calc(50vh - 1ex);
-  }
-  
-  .smile div {
-    display: flex;
-    animation: wink 1s steps(1) infinite;
-  }
-  
-  .smile span {
-    display: inline-block;
-    width: 1em;
-  }
+}
 
-  */
-
-
-
-  .big-button {
+.big-button {
     width: 10em;
     margin-inline: auto;
     overflow: hidden;
@@ -146,76 +119,82 @@
     margin-left: 25px; /* Adjust the margin as needed */
 }
 
-
-
-  
-  @keyframes fade {
+@keyframes fade {
     from {
-      opacity: 0;
+        opacity: 0;
     }
     to {
-      opacity: 1;
+        opacity: 1;
     }
-  }
-  
-  @keyframes trigger {
+}
+
+@keyframes trigger {
     to {
-      --animate: true;
+        --animate: true;
     }
-  }
-  
-  @keyframes pop {
+}
+
+@keyframes pop {
     from {
-      scale: var(--scale-start);
+        -webkit-transform: scale(var(--scale-start)); /* Safari */
+        transform: scale(var(--scale-start));
     }
     to {
-      scale: var(--scale-end);
+        -webkit-transform: scale(var(--scale-end)); /* Safari */
+        transform: scale(var(--scale-end));
     }
-  }
-  
-  @keyframes text-gradient {
+}
+
+@keyframes text-gradient {
     100% {
-      background-position: 150% center;
+        background-position: 150% center;
     }
-  }
-  
-  @keyframes pop-back {
+}
+
+@keyframes pop-back {
     from {
-      scale: var(--scale-end);
+        -webkit-transform: scale(var(--scale-end)); /* Safari */
+        transform: scale(var(--scale-end));
     }
     to {
-      color: var(--color);
-      scale: var(--scale-start);
+        color: var(--color);
+        -webkit-transform: scale(var(--scale-start)); /* Safari */
+        transform: scale(var(--scale-start));
     }
-  }
-  
-  @keyframes wink {
+}
+
+@keyframes wink {
     0%,
     100% {
-      translate: 0 0;
+        -webkit-transform: translate(0, 0); /* Safari */
+        transform: translate(0, 0);
     }
     25%,
     75% {
-      translate: -100% 0;
+        -webkit-transform: translate(-100%, 0); /* Safari */
+        transform: translate(-100%, 0);
     }
     50% {
-      translate: -200% 0;
+        -webkit-transform: translate(-200%, 0); /* Safari */
+        transform: translate(-200%, 0);
     }
-  }
-  
-  @keyframes wave {
+}
+
+@keyframes wave {
     50% {
-      rotate: 10deg;
+        -webkit-transform: rotate(10deg); /* Safari */
+        transform: rotate(10deg);
     }
-  }
-  
-  @keyframes hover {
+}
+
+@keyframes hover {
     from,
     to {
-      translate: 0 calc(var(--hover-offset) * -1);
+        -webkit-transform: translate(0, calc(var(--hover-offset) * -1)); /* Safari */
+        transform: translate(0, calc(var(--hover-offset) * -1));
     }
     50% {
-      translate: 0 var(--hover-offset);
+        -webkit-transform: translate(0, var(--hover-offset)); /* Safari */
+        transform: translate(0, var(--hover-offset));
     }
-  }
-  
+}
