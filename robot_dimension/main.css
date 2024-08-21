@@ -1,12 +1,12 @@
 .big-button {
-    width: 6em;
+    width: 5em;
     margin-inline: auto;
     overflow: hidden;
     white-space: nowrap;
     margin-block-end: calc(50vh - 1ex);
 
-    font-size: 22px;
-    padding: 20px 30px;
+    font-size: 20px;
+    padding: 10px 15px;
     background-color: #f06fca;
     color: rgb(222, 220, 221);
     border: none;
