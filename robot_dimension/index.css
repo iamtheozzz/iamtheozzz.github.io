@@ -3836,8 +3836,8 @@ textarea.w-select {
   }
   
   .c_button {
-    background-color: var(--green-yellow);
-    color: var(--black);
+    background-color: #345dd0;
+    color: var(--white);
     white-space: nowrap;
     border-radius: 100vw;
     padding: 0.8em 1.7em;
