@@ -237,6 +237,7 @@
         box-sizing: border-box;
         transform:scale(0.45);
         transform-origin:center right;
+        text-decoration: none;
       }
 
       .button-cover {
@@ -245,6 +246,7 @@
         background-color: #fff;
         box-shadow: 0 10px 20px -8px #c5d6d6;
         border-radius: 4px;
+        text-decoration: none;
       }
 
       .button-cover:before {
@@ -257,6 +259,7 @@
         font-size: 12px;
         line-height: 1;
         padding: 5px;
+        text-decoration: none;
       }
 
       .button-cover,
@@ -276,15 +279,22 @@
         height: 36px;
         margin: -20px auto 0 auto;
         overflow: hidden;
+        text-decoration: none;
+      }
+
+      .big-button {
+        text-decoration: none;
       }
 
       .button.r,
       .button.r .layer {
         border-radius: 100px;
+        text-decoration: none;
       }
 
       .button.b2 {
         border-radius: 2px;
+        text-decoration: none;
       }
 
       .checkbox {
@@ -319,6 +329,7 @@
         font-size: 10px;
         font-weight: bold;
         text-align: center;
+        text-decoration: none;
         line-height: 1;
         padding: 9px 4px;
         background-color: #2f2f2f;
@@ -329,16 +340,19 @@
       #toggle-button .checkbox:active + .knobs:before {
         width: 46px;
         border-radius: 100px;
+        text-decoration: none;
       }
 
       #toggle-button .checkbox:checked:active + .knobs:before {
         margin-left: -26px;
+        text-decoration: none;
       }
 
       #toggle-button .checkbox:checked + .knobs:before {
         content: "";
         left: 42px;
         background-color: #2f2f2f;
+        text-decoration: none;
       }
 
       #toggle-button .checkbox:checked ~ .layer {
@@ -387,7 +401,7 @@
             <li><a href="#about" data-scroll>About</a></li>
             <li><a href="#case-studies" data-scroll>Machine Learning</a></li>
             <li><a href="#portfolio" data-scroll>Mechanical Engineering</a></li>
-            <li><a href="#team" data-scroll>Circuit Board</a></li>
+            <li><a href="#team" data-scroll>Arduino</a></li>
             <li><a href="#contact" data-scroll>Join</a></li>
           </ul>
         </nav>
@@ -404,14 +418,17 @@
                 <h1 class="slide-title"></h1>
                 <img src="IMG_8723.jpg" alt="Swiper">
               </div>
-              <div class="swiper-slide">
-                <h1 class="slide-title"></h1>
-                <img src="class2.jpg" alt="Swiper">
-              </div>
+              
               <div class="swiper-slide">
                 <h1 class="slide-title"></h1>
                 <img src="class1.jpg" alt="Swiper">
               </div>
+
+              <div class="swiper-slide">
+                <h1 class="slide-title"></h1>
+                <img src="class2.jpg" alt="Swiper">
+              </div>
+
               <div class="swiper-slide">
                 <h1 class="slide-title"></h1>
                 <img src="IMG_8727.jpg" alt="Swiper">
@@ -420,18 +437,28 @@
                 <h1 class="slide-title"></h1>
                 <img src="class3.jpg" alt="Swiper">
               </div>
-              <div class="swiper-slide">
-                <h1 class="slide-title"></h1>
-                <img src="class4.jpg" alt="Swiper">
-              </div>
+              
+             <!--
+<div class="swiper-slide">
+    <h1 class="slide-title"></h1>
+    <img src="class4.jpg" alt="Swiper">
+    </div>
+-->
+ 
+            
+              
               <div class="swiper-slide">
                 <h1 class="slide-title"></h1>
                 <img src="IMG_8727.jpg" alt="Swiper">
               </div>
+
+              <!--
               <div class="swiper-slide">
                 <h1 class="slide-title"></h1>
                 <img src="class5.jpg" alt="Swiper">
               </div>
+              -->
+
             </div>
           </div>
           <span class="progressbar"></span>
@@ -441,14 +468,18 @@
       <section id="about" class="main-section" data-scroll-section>
         <h2 class="title-section" data-scroll data-scroll-speed="1">About Us</h2>
         <p class="subtitle-section" data-scroll data-scroll-speed="2">ECA in SCIE<br>We learn about robotics, machine learning, engineering, coding.<br>We make robots smarter.</p>
+        <br><button class="big-button" onclick="window.location.href='http://itsmyspace.xyz/robot_dimension/sign.html';">Enter your name</button> 
+        
       </section>
 
       <section id="case-studies" class="main-section" data-scroll-section>
         <h2 class="title-section" data-scroll data-scroll-speed="1">Machine Learning</h2>
+        
+        <a class="big-button" href="Visual_Recognition.pptx" download="Visual_Recognition.pptx">Visual Recognition</a>
+        <a class="big-button" href="optimization_gradient_descent.pptx" download="optimization_gradient_descent.pptx">Optimization</a>
         <button class="big-button" onclick="window.location.href='http://itsmyspace.xyz/robot_dimension/cnn.html';">CNN</button> 
         <button class="big-button" onclick="window.location.href='http://itsmyspace.xyz/robot_dimension/svm.html';">SVM</button> 
         <button class="big-button" onclick="window.location.href='http://itsmyspace.xyz/robot_dimension/relu.html';">ReLu</button>
-        
 
 
         
@@ -462,9 +493,11 @@
       </section>
 
       <section id="team" class="main-section" data-scroll-section>
-        <h2 class="title-section" data-scroll data-scroll-speed="1">Circuit Board</h2>
-        <button class="big-button" onclick="window.location.href='http://itsmyspace.xyz/robot_dimension/stm.html';">STM32</button>
-        <button class="big-button" onclick="window.location.href='http://itsmyspace.xyz/robot_dimension/esp.html';">ESP32</button>  
+        <h2 class="title-section" data-scroll data-scroll-speed="1">Arduino</h2>
+        <a class="big-button" href="Arduino.pdf" download="Arduino.pdf">Arduino</a>
+        <a class="big-button" href="flame.ino" download="flame.ino">Flame(code)</a>
+        
+ 
       
 
       </section>
